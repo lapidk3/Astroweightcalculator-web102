@@ -3,10 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Astro Weight Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
   </head>
-  <body>
-     <!-- Write your markup here  -->
-
+  <body id="wrapper">
+    <h1 class="title-text">I'm an Astro Weight Calculator!</h1>
+    <label for="user-weight" class="pre-text-work">Enter your Weight:</label>
+    <input class="position" id="user-weight" type="text" placeholder="Weight(lbs)" name="user-weight"/>
+    <label for="planets" class="pre-text-work">Choose A Planet</label>
+    <select id="planets" name="planets" class="position">Select A Planet</select>
+    <div>
+      <label for="noplanet" class="pre-text-work"><input id="noPlanet" type="checkbox" name="no" value="noPlanet" onclick="removePluto(this)">Pluto is not a planet!</label>
+      <p id="output" class = "pre-text-work"></p>
+      <button class="btn-work" id="calculate-button" onclick="handleClickEvent();">Calculate!</button>
+    </div>
+    <div>
+      <p class="pre-text-work">Have another planet in mind? Add it in!</p>
+      <label for="pname" class="pre-text-work">Name:</label>
+      <input id="pname" type="text" name="pname"/>
+      <label for="pmult" class="pre-text-work">Multiplier:</label>
+      <input id="pmult" type="text" name="pmult"/>
+      <button id="add-button" onclick="addPlanet()">Add</button>
+    </div>
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>

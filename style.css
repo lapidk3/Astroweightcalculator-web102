@@ -1,0 +1,45 @@
+body {
+    background-image: url(space.jpg);
+    text-align: center;
+    vertical-align: middle;
+    font-size: x-large;
+    height: 10em;
+}
+
+.pre-text-work {
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Quicksand';
+    color: white;
+}
+
+.position {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 50px;
+    
+}
+
+.btn-work {
+    width: 250px;
+    height: 50px;
+    background-color:goldenrod;
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Yanone Kaffeesatz';
+}
+
+.title-text {
+    color:firebrick;
+    -webkit-text-stroke-width: 0.15px;
+    -webkit-text-stroke-color: black;
+    font-family: 'Yanone Kaffeesatz';
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width:960px;
+}
